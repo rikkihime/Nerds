@@ -24,10 +24,24 @@
         
             <form action="#" method="get"> 
 		    
-                <h3 class="filters-title">Стоимость:</h3>
+                <h3 class="filters-title">Стоимость:</h3> ДОБАВИТЬ ЛЭЙБЛЫ !!!
 
-                <div>
-                    Фильтры по цене ???
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div style="margin-left:50px;width:100px;" class="bar"></div>
+                        </div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                        <lable class="min-price">от 
+                            <input class="min-price" type="text" value="0">
+                        </lable>
+                        <lable class="max-price">до 
+                            <input class="max-price" type="text" value="15 000">
+                        </lable>                     
+                    </div>
                 </div>
 
                 <h3 class="filters-title">Сетка:</h3>
