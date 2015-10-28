@@ -107,20 +107,10 @@ h3 {
     width: 240px;
 }
 
-header {
-    
-}
-
-input {
-    
-}
-
 .list-promo {
     list-style-type: none;
     padding-left: 0;
 }
-
-
 
 .partners-block a {
     float: left;
@@ -159,4 +149,63 @@ input {
 }
 .center-align p span {
     font-size: 22px;
+}
+
+.catalog-title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 50px 60px;
+    width: 660px;
+}
+
+.filters {
+    float: left;
+    width: 240px;
+    margin-right: 30px;
+    height: 1070px;
+}
+
+.filters label {
+    display: block;
+    padding: 10px 0;
+}
+
+.content {
+    width: 570px;
+    min-height: 1070px;
+    float: right;
+}
+
+.sorting-items li {
+/*    display: inline;*/
+    float: left;
+    list-style-type: none;
+    padding: 5px 10px;
+    
+}
+
+.sorting-items .sorting-btn {
+    float: right;
+    padding: 5px 10px;
+    
+}
+
+.icon-down {
+    background-color: green;
+    width: 5px;
+    height: 5px;
+}
+
+.icon-up {
+    background-color: yellow
+    width: 5px;
+    height: 5px;
+}
+
+.item {
+    display: inline-block;
+    width: 240px;
+    min-height: 275px;
+    margin: 0 20px 10px 0;
 }

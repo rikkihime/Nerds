@@ -3,173 +3,189 @@
 	<head>
 		<title>Nerd's - Креативная веб-студия</title>
 		<meta charset="utf-8">
-        normalize
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
+    
 	    <header class="main-header">
-			<div>
-				<a class="logo" href="#">nerds.ru</a>
-				<nav>
-					<a href="#">Студия</a>
+	    
+            <div class="container clearfix">
+			
+				<a class="logo" href="index.html">nerds.ru</a>
+				
+				<nav class="main-navigation">
+				
+					<a href="index.html">Студия</a>
 					<a href="#">Клиенты</a>
 					<a href="#">Магазин</a>
 					<a href="#">Контакты</a>
 				</nav>
+				
 				<a class="cart" href="#">Корзина</a>
+				
 			</div>
+           
+            <h1 class="catalog-title container">Добро пожаловать в магазин готовых макетов</h1>
+			
 		</header>
 		
-		<h1 class="catalog-title">Добро пожаловать в магазин готовых макетов </h1>
+		<div class="container clearfix">
 		
-		<aside class="filters">
-        
-            <form action="#" method="get"> 
-		    
-                <h3 class="filters-title">Стоимость:</h3>
+            <aside class="filters">
 
-                <div class="range-filter">
-                    <div class="range-controls">
-                        <div class="scale">
-                            <div style="margin-left:50px;width:100px;" class="bar"></div>
+                <form action="#" method="get"> 
+
+                    <h3 class="filters-title">Стоимость:</h3>
+
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div style="margin-left:50px;width:100px;" class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
                         </div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
+                        <div class="price-controls">
+                            <lable class="min-price">от 
+                                <input class="min-price" type="text" value="0">
+                            </lable>
+                            <lable class="max-price">до 
+                                <input class="max-price" type="text" value="15 000">
+                            </lable>                     
+                        </div>
                     </div>
-                    <div class="price-controls">
-                        <lable class="min-price">от 
-                            <input class="min-price" type="text" value="0">
-                        </lable>
-                        <lable class="max-price">до 
-                            <input class="max-price" type="text" value="15 000">
-                        </lable>                     
+
+                    <h3 class="filters-title">Сетка:</h3>
+                        
+                    <div class="radio-filters">
+
+                        <label>
+                            <input type="radio" name="rb" value="radio1" checked>Адаптивная
+                        </label>
+                        <label>
+                            <input type="radio" name="rb" value="radio2">Фиксированная
+                        </label>
+                        <label>
+                            <input type="radio" name="rb" value="radio3">Резиновая
+                        </label>
+                        
                     </div>
+
+                    <h3 class="filters-title">Особенности:</h3>  
+
+                    <label>
+                        <input type="checkbox" checked>Слайдер
+                    </label>
+                    <label>
+                        <input type="checkbox">Блок преимуществ
+                    </label>
+                    <label>
+                        <input type="checkbox" checked>Новости
+                    </label>
+                    <label>
+                        <input type="checkbox">Галерея
+                    </label>
+                    <label>
+                        <input type="checkbox">Корзина
+                    </label>
+
+                    <input class="filters-button" type="submit" value="Показать">
+
+                </form>
+
+            </aside>
+           
+            <div class="content">
+
+                <div class="sorting clearfix">
+
+                    <ul class="sorting-items">
+                        <li>Сортировать:</li>
+                        <li>
+                            <a class="sorting-item" href="#">По цене</a></li>
+                        <li>
+                            <a class="sorting-item" href="#">По типу</a></li>
+                        <li>
+                            <a class="sorting-item" href="#">По функционалу</a></li>
+                    </ul>
+
+                    <a class="sorting-btn icon-down checked-btn" href="#"></a>
+                    <a class="sorting-btn icon-up" href="#"></a>
+
                 </div>
 
-                <h3 class="filters-title">Сетка:</h3>
+                <article class="item">
+                    <div class="dots">o o o</div>
+                    <img class="item-img" src="img/aviator-back.jpg" width="240" height="240" alt="Однострочный макет с авторским дизайном">
+                    <div class="item-info">
+                        <h3 class="item-title">Aviator</h3>
+                        <p>Однострочный макет с авторским дизайном</p>
+                        <a class="button-action" href="#">8000 Р.</a>
+                    </div>
+                </article>
 
-                <label>
-                    <input type="radio" name="rb" value="radio1" checked>Адаптивная
-                </label>
-                <label>
-                    <input type="radio" name="rb" value="radio2">Фиксированная
-                </label>
-                <label>
-                    <input type="radio" name="rb" value="radio3">Резиновая
-                </label>
+                <article class="item">
+                    <div class="dots">o o o</div>
+                    <img class="item-img" src="img/sunset-back.jpg" width="240" height="240" alt="Интернет-магазин с личным кабинетом">
+                    <div class="item-info">
+                        <h3 class="item-title">Sunset</h3>
+                        <p>Интернет-магазин с личным кабинетом</p>
+                        <a class="button-action" href="#">10000 Р.</a>
+                    </div>
+                </article>
 
-                <h3 class="filters-title">Особенности:</h3>  
+                <article class="item">
+                    <div class="dots">o o o</div>
+                    <img class="item-img" src="img/forte-back.jpg" width="240" height="240" alt="Отличный макет для личного блога">
+                    <div class="item-info">
+                        <h3 class="item-title">Forte</h3>
+                        <p>Отличный макет для личного блога</p>
+                        <a class="button-action" href="#">5000 Р.</a>
+                    </div>
+                </article>
 
-                <label>
-                    <input type="checkbox" checked>Слайдер
-                </label>
-                <label>
-                    <input type="checkbox">Блок преимуществ
-                </label>
-                <label>
-                    <input type="checkbox" checked>Новости
-                </label>
-                <label>
-                    <input type="checkbox">Галерея
-                </label>
-                <label>
-                    <input type="checkbox">Корзина
-                </label>
+                <article class="item">
+                    <div class="dots">o o o</div>
+                    <img class="item-img" src="img/modern-organic-back.jpg" width="240" height="240" alt="Сайт для ресторана быстрого питания">
+                    <div class="item-info">
+                        <h3 class="item-title">Modern organic thai</h3>
+                        <p>Сайт для ресторана быстрого питания</p>
+                        <a class="button-action" href="#">12000 Р.</a>
+                    </div>
+                </article>
 
-                <input class="filters-button" type="submit" value="Показать">
-                
-            </form>
-            
-        </aside>
-           
-        <div class="content">
-                
-            <div class="sorting">
+                <article class="item">
+                    <div class="dots">o o o</div>
+                    <img class="item-img" src="img/avenue-back.jpg" width="239" height="240" alt="Макет для блога о путешествиях">
+                    <div class="item-info">
+                        <h3 class="item-title">Avenue</h3>
+                        <p>Макет для блога о путешествиях</p>
+                        <a class="button-action" href="#">8000 Р.</a>
+                    </div>
+                </article>
 
-                <ul class="sorting-items">
-                    <li>Сортировать:</li>
-                    <li>
-                        <a class="sorting-item" href="#">По цене</a></li>
-                    <li>
-                        <a class="sorting-item" href="#">По типу</a></li>
-                    <li>
-                        <a class="sorting-item" href="#">По функционалу</a></li>
-                </ul>
+                <article class="item">
+                    <div class="dots">o o o</div>
+                    <img class="item-img" src="img/dovetail-back.jpg" width="239" height="240" alt="Интернет-магазин с галереей товаров">
+                    <div class="item-info">
+                        <h3 class="item-title">Dovetail</h3>
+                        <p>Интернет-магазин с галереей товаров</p>
+                        <a class="button-action" href="#">14000 Р.</a>
+                    </div>
+                </article>
 
-                <a class="sorting-btn icon-down checked-btn" href="#"></a>
-                <a class="sorting-btn icon-up" href="#"></a>
-                
+                <div class="page-button">
+
+                    <span class="page-content">1</span>
+                    <a class="page-content" href="#">2</a>
+                    <a class="page-content" href="#">3</a>
+                    <a class="page-content" href="#">Следующая</a>
+                </div>
+
             </div>
             
-            <article class="item">
-                <div class="dots">o o o</div>
-                <img class="item-img" src="img/aviator-back.jpg" width="240" height="240" alt="Однострочный макет с авторским дизайном">
-                <div class="item-info">
-                    <h3 class="item-title">Aviator</h3>
-                    <p>Однострочный макет с авторским дизайном</p>
-                    <a class="button-action" href="#">8000 Р.</a>
-                </div>
-            </article>
-            
-            <article class="item">
-                <div class="dots">o o o</div>
-                <img class="item-img" src="img/sunset-back.jpg" width="240" height="240" alt="Интернет-магазин с личным кабинетом">
-                <div class="item-info">
-                    <h3 class="item-title">Sunset</h3>
-                    <p>Интернет-магазин с личным кабинетом</p>
-                    <a class="button-action" href="#">10000 Р.</a>
-                </div>
-            </article>
-            
-            <article class="item">
-                <div class="dots">o o o</div>
-                <img class="item-img" src="img/forte-back.jpg" width="240" height="240" alt="Отличный макет для личного блога">
-                <div class="item-info">
-                    <h3 class="item-title">Forte</h3>
-                    <p>Отличный макет для личного блога</p>
-                    <a class="button-action" href="#">5000 Р.</a>
-                </div>
-            </article>
-            
-            <article class="item">
-                <div class="dots">o o o</div>
-                <img class="item-img" src="img/modern-organic-back.jpg" width="240" height="240" alt="Сайт для ресторана быстрого питания">
-                <div class="item-info">
-                    <h3 class="item-title">Modern organic thai</h3>
-                    <p>Сайт для ресторана быстрого питания</p>
-                    <a class="button-action" href="#">12000 Р.</a>
-                </div>
-            </article>
-            
-            <article class="item">
-                <div class="dots">o o o</div>
-                <img class="item-img" src="img/avenue-back.jpg" width="239" height="240" alt="Макет для блога о путешествиях">
-                <div class="item-info">
-                    <h3 class="item-title">Avenue</h3>
-                    <p>Макет для блога о путешествиях</p>
-                    <a class="button-action" href="#">8000 Р.</a>
-                </div>
-            </article>
-            
-            <article class="item">
-                <div class="dots">o o o</div>
-                <img class="item-img" src="img/dovetail-back.jpg" width="239" height="240" alt="Интернет-магазин с галереей товаров">
-                <div class="item-info">
-                    <h3 class="item-title">Dovetail</h3>
-                    <p>Интернет-магазин с галереей товаров</p>
-                    <a class="button-action" href="#">14000 Р.</a>
-                </div>
-            </article>
-            
-            <div class="page-button">
-                
-                <span class="page-content">1</span>
-                <a class="page-content" href="#">2</a>
-                <a class="page-content" href="#">3</a>
-                <a class="page-content" href="#">Следующая</a>
-            </div>
-           
         </div>
         
 <!--        для карты-->
@@ -178,12 +194,14 @@
         </div>
                       
         <footer>
-            <div class="center-algn">
+            <div class="center-align container clearfix">
                 <a class="button-soc vk" href="http://www.vk.com"></a>
                 <a class="button-soc fb" href="http://www.facebook.com"></a>
                 <a class="button-soc insta" href="http://instagram.com"></a>
-                <h3>Давайте дружить, это выгодно!<h3>
-                <p>Скидка 10% для друзей из социальных сетей</p>
+                <p>Давайте дружить, это выгодно!
+                <span>Скидка 10% для друзей из социальных сетей</span>
+                </p>             
+                
             </div>
         </footer>
         
