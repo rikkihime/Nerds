@@ -178,17 +178,19 @@ h3 {
 }
 
 .sorting-items li {
-/*    display: inline;*/
     float: left;
     list-style-type: none;
-    padding: 5px 10px;
-    margin: 0;
-    
+    padding: 5px 10px 5px 0;
 }
 
-.sorting-items .sorting-btn {
+.sorting-items {
+    padding-left: 0;
+}
+
+.sorting-btn {
     float: right;
     padding: 5px 10px;
+    margin-right: 2px;
     
 }
 
@@ -199,7 +201,7 @@ h3 {
 }
 
 .icon-up {
-    background-color: yellow
+    background-color: yellow;
     width: 5px;
     height: 5px;
 }
@@ -208,5 +210,10 @@ h3 {
     display: inline-block;
     width: 240px;
     min-height: 275px;
-    margin: 0 20px 10px 0;
+    margin: 0 80px 10px 0;
+    vertical-align: top;
+}
+
+.item:nth-child(2n+1) {
+    margin-right: 0;
 }
