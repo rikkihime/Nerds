@@ -53,7 +53,7 @@
                     <div class="range-filter">
                         <div class="range-controls">
                             <div class="scale">
-                                <div style="margin-left:50px;width:100px;" class="bar"></div>
+                                <div class="bar"></div>
                             </div>
                             <div class="toggle min-toggle"></div>
                             <div class="toggle max-toggle"></div>
@@ -71,37 +71,36 @@
                     <h3 class="filters-title">Сетка:</h3>
                         
                     <div class="radio-filters">
-
-                        <label>
-                            <input type="radio" name="rb" value="radio1" checked>Адаптивная
-                        </label>
-                        <label>
-                            <input type="radio" name="rb" value="radio2">Фиксированная
-                        </label>
-                        <label>
-                            <input type="radio" name="rb" value="radio3">Резиновая
-                        </label>
+                       
+                        <input type="radio" id="rb-id-1" name="rb" value="radio1" checked>
+                        <label for="rb-id-1">Адаптивная</label>
+                                             
+                        <input type="radio" id="rb-id-2" name="rb" value="radio2">
+                        <label for="rb-id-2">Фиксированная</label>
+                        
+                        <input type="radio" id="rb-id-3" name="rb" value="radio3">
+                        <label for="rb-id-3">Резиновая</label>
                         
                     </div>
 
-                    <h3 class="filters-title">Особенности:</h3>  
+                    <h3 class="filters-title check-title">Особенности:</h3>  
 
                     <div class="check-filters">
-                        <label>
-                            <input type="checkbox" checked>Слайдер
-                        </label>
-                        <label>
-                            <input type="checkbox">Блок преимуществ
-                        </label>
-                        <label>
-                            <input type="checkbox" checked>Новости
-                        </label>
-                        <label>
-                            <input type="checkbox">Галерея
-                        </label>
-                        <label>
-                            <input type="checkbox">Корзина
-                        </label>
+                        
+                        <input type="checkbox" id="ch-1" checked>
+                        <label for="ch-1">Слайдер</label>
+                                               
+                        <input type="checkbox" id="ch-2">
+                        <label for="ch-2">Блок преимуществ</label>
+                        
+                        <input type="checkbox" id="ch-3" checked>
+                        <label for="ch-3">Новости</label>
+                        
+                        <input type="checkbox" id="ch-4">
+                        <label for="ch-4">Галерея</label>
+                        
+                        <input type="checkbox" id="ch-5">
+                        <label for="ch-5">Корзина</label>
 
                         <input class="filters-button" type="submit" value="Показать">
                     </div>
@@ -115,77 +114,93 @@
                 <div class="sorting clearfix">
 
                     <ul class="sorting-items">
+                       
                         <li>Сортировать:</li>
                         <li>
-                            <a class="sorting-item" href="#">По цене</a></li>
+                            <a class="sorting-item" href="#">По цене</a>
+                        </li>
                         <li>
-                            <a class="sorting-item" href="#">По типу</a></li>
+                            <a class="sorting-item" href="#">По типу</a>
+                        </li>
                         <li>
-                            <a class="sorting-item" href="#">По функционалу</a></li>
+                            <a class="sorting-item" href="#">По функционалу</a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <ul class="sorting-btns">
+                        
+                        <li>
+                            <a class="sorting-btn icon-down checked-btn" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="sorting-btn icon-up" href="#"></a>
+                        </li>
+                        
                     </ul>
 
-                    <a class="sorting-btn icon-down checked-btn" href="#"></a>
-                    <a class="sorting-btn icon-up" href="#"></a>
+                    
+                    
 
                 </div>
 
                 <article class="item">
-                    <div class="dots">o o o</div>
+                    <div class="dots"></div>
                     <img class="item-img" src="img/aviator-back.jpg" width="240" height="240" alt="Однострочный макет с авторским дизайном">
                     <div class="item-info">
                         <h3 class="item-title">Aviator</h3>
                         <p>Однострочный макет с авторским дизайном</p>
-                        <a class="button-action" href="#">8000 Р.</a>
+                        <a class="button-action btn-red" href="#">8000 Р.</a>
                     </div>
                 </article>
 
                 <article class="item">
-                    <div class="dots">o o o</div>
+                    <div class="dots"></div>
                     <img class="item-img" src="img/sunset-back.jpg" width="240" height="240" alt="Интернет-магазин с личным кабинетом">
                     <div class="item-info">
                         <h3 class="item-title">Sunset</h3>
                         <p>Интернет-магазин с личным кабинетом</p>
-                        <a class="button-action" href="#">10000 Р.</a>
+                        <a class="button-action btn-red" href="#">10000 Р.</a>
                     </div>
                 </article>
 
                 <article class="item">
-                    <div class="dots">o o o</div>
+                    <div class="dots"></div>
                     <img class="item-img" src="img/forte-back.jpg" width="240" height="240" alt="Отличный макет для личного блога">
                     <div class="item-info">
                         <h3 class="item-title">Forte</h3>
                         <p>Отличный макет для личного блога</p>
-                        <a class="button-action" href="#">5000 Р.</a>
+                        <a class="button-action btn-red" href="#">5000 Р.</a>
                     </div>
                 </article>
 
                 <article class="item">
-                    <div class="dots">o o o</div>
+                    <div class="dots"></div>
                     <img class="item-img" src="img/modern-organic-back.jpg" width="240" height="240" alt="Сайт для ресторана быстрого питания">
                     <div class="item-info">
                         <h3 class="item-title">Modern organic thai</h3>
                         <p>Сайт для ресторана быстрого питания</p>
-                        <a class="button-action" href="#">12000 Р.</a>
+                        <a class="button-action btn-red" href="#">12000 Р.</a>
                     </div>
                 </article>
 
                 <article class="item">
-                    <div class="dots">o o o</div>
+                    <div class="dots"></div>
                     <img class="item-img" src="img/avenue-back.jpg" width="239" height="240" alt="Макет для блога о путешествиях">
                     <div class="item-info">
                         <h3 class="item-title">Avenue</h3>
                         <p>Макет для блога о путешествиях</p>
-                        <a class="button-action" href="#">8000 Р.</a>
+                        <a class="button-action btn-red" href="#">8000 Р.</a>
                     </div>
                 </article>
 
                 <article class="item">
-                    <div class="dots">o o o</div>
+                    <div class="dots"></div>
                     <img class="item-img" src="img/dovetail-back.jpg" width="239" height="240" alt="Интернет-магазин с галереей товаров">
                     <div class="item-info">
                         <h3 class="item-title">Dovetail</h3>
                         <p>Интернет-магазин с галереей товаров</p>
-                        <a class="button-action" href="#">14000 Р.</a>
+                        <a class="button-action btn-red" href="#">14000 Р.</a>
                     </div>
                 </article>
 
@@ -207,16 +222,19 @@
             <div class="our-contacts"> </div>
         </div>
                       
-        <footer>
-            <div class="center-align container clearfix">
-                <a class="button-soc vk" href="http://www.vk.com"></a>
-                <a class="button-soc fb" href="http://www.facebook.com"></a>
-                <a class="button-soc insta" href="http://instagram.com"></a>
-                <p>Давайте дружить, это выгодно!
-                <span>Скидка 10% для друзей из социальных сетей</span>
-                </p>             
-                
-            </div>
+        <footer class="footer-align container clearfix">
+
+            <a class="button-soc vk" href="http://www.vk.com"></a>
+            <a class="button-soc fb" href="http://www.facebook.com"></a>
+            <a class="button-soc insta" href="http://instagram.com"></a>
+
+            <div class="footer-text-block">
+
+                <h2>Давайте дружить, это выгодно!</h2>
+                <p>Скидка 10% для друзей из социальных сетей</p>
+
+            </div>                  
+
         </footer>
         
 <!--        для всплывающего окна (формы)-->

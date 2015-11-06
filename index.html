@@ -10,7 +10,7 @@
 	<body>
 	    <header class="main-header clearfix">
 	    
-			<div class="container">
+            <div class="container clearfix">
 			
 				<a class="logo" href="/index.html">nerds.ru</a>
 				
@@ -31,32 +31,30 @@
                     </ul>
 				</nav>
 				
-				<a class="cart" href="#">Корзина</a>
+				<a class="cart active" href="#">Корзина</a>
 				
 			</div>
 			
             <div class="slider container">
 
                 <div class="switcher">
-                    
-                    <label class="bt-1">
-                        <input type="radio" name="slider" checked>
-                    </label>
-                    <label class="bt-2">
-                        <input type="radio" name="slider">
-                    </label>
-                    <label class="bt-3">
-                        <input type="radio" name="slider">
-                    </label>
-                    
-
+                   
+                    <input id="button-1" type="radio" name="slider" checked>
+                    <label for="button-1" class="bt-1"></label>
+                        
+                    <input id="button-2" type="radio" name="slider">
+                    <label for="button-2" class="bt-2"></label>
+                        
+                    <input id="button-3" type="radio" name="slider">
+                    <label for="button-3" class="bt-3"></label>
+            
                 </div>
 
                 <div class="slides clearfix">
 
                     <div class="slide slide-pic1">
                        
-                        <h2>Долго, дорого,<br/> скрупулезно</h2>
+                        <h2>Долго, дорого,<br/> скрупулезно.</h2>
                         <p>Математически выверенный дизайн<br/> для вашего сайта или мобильного приложения</p>
                         <a class="button slide1" href="#">Узнать больше</a>
                     </div>
@@ -152,16 +150,19 @@
             <div class="our-contacts"> </div>
         </div>
 
-        <footer>
-			<div class="button-align container clearfix">
-				<a class="button-soc vk" href="http://www.vk.com"></a>
-				<a class="button-soc fb" href="http://www.facebook.com"></a>
-				<a class="button-soc insta" href="http://instagram.com"></a>
-                <p>Давайте дружить, это выгодно!
-                <span>Скидка 10% для друзей из социальных сетей</span>
-                </p>
+        <footer class="footer-align container clearfix">
+        
+            <a class="button-soc vk" href="http://www.vk.com"></a>
+            <a class="button-soc fb" href="http://www.facebook.com"></a>
+            <a class="button-soc insta" href="http://instagram.com"></a>
+            
+            <div class="footer-text-block">
+               
+                <h2>Давайте дружить, это выгодно!</h2>
+                <p>Скидка 10% для друзей из социальных сетей</p>
+            
+            </div>                  
                 
-			</div>
 		</footer>
                
 <!--        для всплывающего окна (формы)-->
