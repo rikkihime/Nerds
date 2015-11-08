@@ -34,7 +34,7 @@
                     
 				</nav>
 				
-				<a class="cart" href="#">Корзина</a>
+                <a class="cart" href="#"><i class="icon-basket"></i>Корзина</a>
 				
 			</div>
            
@@ -78,7 +78,7 @@
                         <input type="radio" id="rb-id-2" name="rb" value="radio2">
                         <label for="rb-id-2">Фиксированная</label>
                         
-                        <input type="radio" id="rb-id-3" name="rb" value="radio3">
+                        <input type="radio" id="rb-id-3" name="rb" value="radio3" disabled>
                         <label for="rb-id-3">Резиновая</label>
                         
                     </div>
@@ -99,10 +99,10 @@
                         <input type="checkbox" id="ch-4">
                         <label for="ch-4">Галерея</label>
                         
-                        <input type="checkbox" id="ch-5">
+                        <input type="checkbox" id="ch-5" disabled>
                         <label for="ch-5">Корзина</label>
 
-                        <input class="filters-button" type="submit" value="Показать">
+                        <input class="filters-button grey-btn" type="submit" value="Показать">
                     </div>
 
                 </form>
@@ -149,7 +149,7 @@
                     <img class="item-img" src="img/aviator-back.jpg" width="240" height="240" alt="Однострочный макет с авторским дизайном">
                     <div class="item-info">
                         <h3 class="item-title">Aviator</h3>
-                        <p>Однострочный макет с авторским дизайном</p>
+                        <p>Однострочный&nbsp;макет с&nbsp;авторским&nbsp;дизайном</p>
                         <a class="button-action btn-red" href="#">8000 Р.</a>
                     </div>
                 </article>
@@ -159,7 +159,7 @@
                     <img class="item-img" src="img/sunset-back.jpg" width="240" height="240" alt="Интернет-магазин с личным кабинетом">
                     <div class="item-info">
                         <h3 class="item-title">Sunset</h3>
-                        <p>Интернет-магазин с личным кабинетом</p>
+                        <p>Интернет-магазин с&nbsp;личным кабинетом</p>
                         <a class="button-action btn-red" href="#">10000 Р.</a>
                     </div>
                 </article>
@@ -178,7 +178,7 @@
                     <div class="dots"></div>
                     <img class="item-img" src="img/modern-organic-back.jpg" width="240" height="240" alt="Сайт для ресторана быстрого питания">
                     <div class="item-info">
-                        <h3 class="item-title">Modern organic thai</h3>
+                        <h3 class="item-title">Modern&nbsp;organic thai</h3>
                         <p>Сайт для ресторана быстрого питания</p>
                         <a class="button-action btn-red" href="#">12000 Р.</a>
                     </div>
@@ -219,14 +219,25 @@
 <!--        для карты-->
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.542969696345!2d30.319686508251248!3d59.939163688075645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1446535763017" frameborder="0" allowfullscreen></iframe>
-            <div class="our-contacts"> </div>
+            
+            <div class="our-contacts">
+                
+                <h4>NЁRDS DESIGN STUDIO</h4>
+                
+                <p>191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8</p>
+                    
+                <p>тел.&nbsp;+7&nbsp;(812)&nbsp;275-75-75</p>
+                
+                <a class="btn-red btn-write-us" href="#">Напишите нам</a>
+                
+            </div>
         </div>
                       
         <footer class="footer-align container clearfix">
 
-            <a class="button-soc vk" href="http://www.vk.com"></a>
-            <a class="button-soc fb" href="http://www.facebook.com"></a>
-            <a class="button-soc insta" href="http://instagram.com"></a>
+            <a class="button-soc vk" href="http://www.vk.com"><i class="icon-vk"></i></a>
+            <a class="button-soc fb" href="http://www.facebook.com"><i class="icon-facebook"></i></a>
+            <a class="button-soc insta" href="http://instagram.com"><i class="icon-instagramm"></i></a>
 
             <div class="footer-text-block">
 
@@ -238,6 +249,48 @@
         </footer>
         
 <!--        для всплывающего окна (формы)-->
-        <div class="popup"> </div>  
-             
+        <div class="popup">  
+            
+            <div class="popup-close">&times;</div>
+
+            <form class="popup-form" action="/auth" method="post">
+
+                <div class="form-column-container clearfix">
+
+                    <div class="form-column-left">
+                        <label for="login-field">Ваше имя:</label>
+                        <input type="text" name="login" id="login-field" required placeholder="Представьтесь, пожалуйста">
+                    </div>
+
+                    <div class="form-column-right">
+                        <label for="email-field">Ваш e-mail:</label>
+                        <input type="email" name="email" id="email-field" required placeholder="Для отправки ответа">
+                    </div>
+                </div>
+                    
+                <div class="form-column-container">
+                    
+                    <label for="note-field">Текст письма:</label>
+                    <textarea name="note" id="note-field" rows="5" required placeholder="В свободной форме"></textarea>
+                    
+                </div>
+                
+
+                <div class="form-column-container clearfix">
+
+                    <div class="form-column-left">
+                        <input type="submit" value="Отправить">
+                    </div>
+
+                    <div class="form-column-right">
+                        <a class="btn-reset btn" href="#">Отмена</a>
+                    </div>
+
+                </div> 
+
+            </form>
+
+        </div>   
+              
+        <script src="js/script.js"></script>                
     </body>
