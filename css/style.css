@@ -153,9 +153,9 @@ h3 {
 }
 
 .main-navigation a {
-    display: inline-block;
     float: left;
     padding: 28px 20px 0;
+/*    margin-right: 20px;*/
     color: #000;
     vertical-align: top;
     text-decoration: none;
@@ -166,6 +166,9 @@ h3 {
 
 .main-navigation .active a {
     position: relative;
+/*    box-shadow: inset 0 -3px 0 0 #fb565a;*/
+/*    border-bottom: 3px solid #fb565a;*/
+    
 }
 
 .main-navigation .active a:after {
@@ -178,6 +181,8 @@ h3 {
     content: "";
 }
 
+
+
 .main-navigation a:hover {
     color: #f87f81;
 }
@@ -188,7 +193,6 @@ h3 {
 
 .cart {
     position: relative;
-    display: inline-block;
     float: right;
     margin-top: 5px;
     padding: 30px 1px 5px 40px;
@@ -254,6 +258,34 @@ h3 {
     font-size: 16px;
     line-height: 22px;
 }
+
+
+.slide-1 h2 {
+    width: 260px;
+}
+
+.slide-1 p {
+    width: 370px;
+}
+
+.slide-2 h2 {
+    width: 475px;
+}
+
+.slide-2 p {
+    width: 450px;
+}
+
+.slide-3 h2 {
+    width: 330px;
+}
+
+.slide-3 p {
+    width: 480px;
+}
+
+
+
 
 .slider .button {
     display: block;
@@ -660,7 +692,6 @@ h3 {
 
 
 .footer-text-block {
-    display: inline-block;
     float: right;
     margin-right: 12px;
     min-height: 80px;
@@ -1109,10 +1140,27 @@ h3 {
 
 .sorting-items a {
     color: #c1c1c1;
+    text-decoration: none;
+    border-bottom: 1px dotted #00ca74;
+    
+}
+
+.sorting-items a:hover {
+    border-bottom: 1px solid #00ca74;
+    color: #000;
+}
+
+.sorting-items a:active {
+    border-bottom: none;
+    color: #000;
+}
+
+.sorting-items .checked-item {
+    color: #000;
+    border-bottom: none;
 }
 
 .sorting-items li {
-/*    float: left;*/
     display: inline-block;
     margin-right: 35px;
     padding: auto 5px;
@@ -1127,9 +1175,7 @@ h3 {
 
 .sorting-btns li {
     display: inline-block;
-    display: inline-block;
     list-style: none;
-    vertical-align: top;
     vertical-align: top;
 }
 
@@ -1171,6 +1217,10 @@ h3 {
     color: #00ca74;
 }
 
+.icon-up:active,
+.icon-down:active {
+    color: #000;
+}
 
 
 
