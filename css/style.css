@@ -1217,11 +1217,16 @@ h3 {
     color: #00ca74;
 }
 
-.icon-up:active,
-.icon-down:active {
-    color: #000;
+.icon-up:hover::before,
+.icon-down:hover::before {
+    color: #b5b5b5;
 }
 
+
+.icon-up:active::before,
+.icon-down:active::before {
+    color: #000;
+}
 
 
 .item {
