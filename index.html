@@ -31,7 +31,7 @@
                     </ul>
 				</nav>
 				
-				<a class="cart active" href="#">Корзина</a>
+                <a class="cart" href="#"><i class="icon-basket"></i>Корзина</a>
 				
 			</div>
 			
@@ -56,17 +56,17 @@
                        
                         <h2>Долго, дорого,<br/> скрупулезно.</h2>
                         <p>Математически выверенный дизайн<br/> для вашего сайта или мобильного приложения</p>
-                        <a class="button slide1" href="#">Узнать больше</a>
+                        <a class="button slide1 btn-red" href="#">Узнать больше</a>
                     </div>
                     <div class="slide slide-pic2">
                         <h2>Любите ли вы математику,<br/> как любим ее мы?</h2>
                         <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br/> за креатив, чтобы дать им возможность все просчитать</p>
-                        <a class="button slide2" href="#">Узнать больше</a>
+                        <a class="button slide2 btn-red" href="#">Узнать больше</a>
                     </div>
                     <div class="slide slide-pic3">
                         <h2>Только наркотики,<br/> только хардкор!</h2>
                         <p>Все дизайнерские решения в нашей компании принимаются<br/> только под воздействием качественных галлюциногенов</p>
-                        <a class="button slide3" href="#">Узнать больше</a>
+                        <a class="button slide3 btn-red" href="#">Узнать больше</a>
                         
                     </div>
 
@@ -131,15 +131,15 @@
             </div>            
         </section>
         
-        <div class="partners-block clearfix container">
-            <a href="#">A. Glukhanko
-                <img src="/img/" alt="Партнер: A. Glukhanko">
+        <div class="partners-block container">
+            <a class="partner-1" href="#">
+<!--                <img src="/img/partners-block-glukhanko.png" width="198" height="37" alt="Партнер: A. Glukhanko">-->
             </a>
-            <a href="#">HTML Academy
-                <img src=".png" alt="Партнер: HTML Academy">
+            <a class="partner-2" href="#">
+<!--                <img src="/img/partners-block-academy.png" width="199" height="68" alt="Партнер: HTML Academy">-->
             </a>
-            <a href="#">Barbershop Borodinski
-                <img src=".png" alt="Партнер: Barbershop Borodinski">
+            <a class="partner-3" href="#">
+<!--                <img src="/img/partners-block-borodinski.png" width="209" height="86" alt="Партнер: Barbershop Borodinski">-->
             </a>
         </div>
         
@@ -147,25 +147,82 @@
 <!--        для карты-->
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.542969696345!2d30.319686508251248!3d59.939163688075645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1446535763017" frameborder="0" allowfullscreen></iframe>
-            <div class="our-contacts"> </div>
+            
+            <div class="our-contacts">
+
+                <h4>NЁRDS DESIGN STUDIO</h4>
+
+                <p>191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8</p>
+
+                <p>тел.&nbsp;+7&nbsp;(812)&nbsp;275-75-75</p>
+
+                <a class="btn-red btn-write-us" href="#">Напишите нам</a>
+
+            </div>
+            
         </div>
 
         <footer class="footer-align container clearfix">
-        
-            <a class="button-soc vk" href="http://www.vk.com"></a>
-            <a class="button-soc fb" href="http://www.facebook.com"></a>
-            <a class="button-soc insta" href="http://instagram.com"></a>
-            
+
+            <a class="button-soc vk" href="http://www.vk.com"><i class="icon-vk"></i></a>
+            <a class="button-soc fb" href="http://www.facebook.com"><i class="icon-facebook"></i></a>
+            <a class="button-soc insta" href="http://instagram.com"><i class="icon-instagramm"></i></a>
+
             <div class="footer-text-block">
-               
+
                 <h2>Давайте дружить, это выгодно!</h2>
                 <p>Скидка 10% для друзей из социальных сетей</p>
-            
+
             </div>                  
-                
-		</footer>
+
+        </footer>
                
 <!--        для всплывающего окна (формы)-->
-        <div class="popup"> </div>  
+        <div class="popup">  
+
+            <div class="popup-close">&times;</div>
+
+            <form class="popup-form" action="/auth" method="post">
+
+                <div class="form-column-container clearfix">
+
+                    <div class="form-column-left">
+                        <label for="login-field">Ваше имя:</label>
+                        <input type="text" name="login" id="login-field" required placeholder="Представьтесь, пожалуйста">
+                    </div>
+
+                    <div class="form-column-right">
+                        <label for="email-field">Ваш e-mail:</label>
+                        <input type="email" name="email" id="email-field" required placeholder="Для отправки ответа">
+                    </div>
+                </div>
+
+                <div class="form-column-container">
+
+                    <label for="note-field">Текст письма:</label>
+                    <textarea name="note" id="note-field" rows="5" required placeholder="В свободной форме"></textarea>
+
+                </div>
+
+
+                <div class="form-column-container clearfix">
+
+                    <div class="form-column-left">
+                        <input type="submit" value="Отправить">
+                    </div>
+
+                    <div class="form-column-right">
+                        <a class="btn-reset btn" href="#">Отмена</a>
+                    </div>
+
+                </div> 
+
+            </form>
+
+        </div>   
+
+        <script src="js/script.js"></script>                
+    </body>
+
         	    
 	</body>
