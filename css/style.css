@@ -289,7 +289,7 @@ h3 {
 
 .slider .button {
     display: block;
-    margin-top: 24px;
+    margin-top: 23px;
     padding: 12px 10px;
     width: 220px;
     border-radius: 3px;
@@ -372,6 +372,8 @@ h3 {
 
 .orders h3 {
     text-transform: uppercase;
+    margin-top: 23px;
+    margin-bottom: 15px;
 }
 
 .orders p {
@@ -410,7 +412,7 @@ h3 {
 
 .btn-orders {
     display: block;
-    margin-top: 26px;
+    margin-top: 25px;
     margin-bottom: 80px;
     padding-top: 10px;
     width: 140px;
@@ -909,7 +911,7 @@ input[placeholder] {
 }
 
 .filters-title {
-    margin-bottom: 10px;  
+    margin-bottom: 13px;  
     text-transform: uppercase;
     font-size: 18px;     
     line-height: 30px;
@@ -917,14 +919,19 @@ input[placeholder] {
 
 .radio-filters,
 .check-filters {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     color: #283136;
     font-size: 16px;
     line-height: 20px;
 }
 
 .check-title {
-    margin-top: 33px;
+    margin-top: 36px;
+    margin-bottom: 5px;
+}
+
+.radio-title {
+    margin-bottom: 7px;
 }
 
 .filters label {
@@ -1085,14 +1092,8 @@ input[placeholder] {
     margin-right: 6px;
 }
 
-/*
-.price-controls .max-price {
-    text-align: right;
-}
-*/
-
 .filters-button {
-    margin-top: 45px;
+    margin-top: 48px;
     width: 155px;
     height: 40px;
     border: none;
@@ -1102,6 +1103,10 @@ input[placeholder] {
     font-size: 12px;
     line-height: 18px;
 }
+
+
+
+
 
 /*======================================== GREY BTN =======*/
 
@@ -1119,12 +1124,18 @@ input[placeholder] {
 /*    border-top: 3px solid #b5b5b5;*/
     background-color: #d5d5d5;
 }
+
+
+
+
 .grey-btn:active, 
 .btn-red:active,
 .btn-green:active,
 .btn-yellow:active {
     box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 
@@ -1138,7 +1149,7 @@ input[placeholder] {
 
 .sorting {
     position: relative;
-    margin-top: 85px;
+    margin-top: 84px;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 12px;
@@ -1146,15 +1157,20 @@ input[placeholder] {
 }
 
 .sorting ul {
-    display: inline-block;
     margin: 0;
     padding: 0;
+    float: left;
+    max-width: 560px;
 }
 
+/*
 .sorting-items {
     padding-left: 0;
     width: 420px;
 }
+*/
+
+
 
 .sorting-items a {
     color: #c1c1c1;
@@ -1180,29 +1196,82 @@ input[placeholder] {
 
 .sorting-items li {
     display: inline-block;
-    margin-right: 35px;
-    padding: auto 5px;
+/*    margin-right: 35px;*/
+    margin: 0 40px 0 0;
+/*    padding: auto 5px;*/
+    padding: 0;
     list-style-type: none;
     vertical-align: top;
     text-decoration: none;
+    
 }
 
 .sorting-items li:last-child {
     margin-right: 0;
 }
 
-.sorting-btns li {
-    display: inline-block;
-    list-style: none;
-    vertical-align: top;
+.sorting-btn {
+    float: right;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    font-size: 23px;
+    line-height: 23px;
+    text-decoration: none;
+    margin-top: -5px;
+    margin-left: 2px;
 }
 
+.icon-up-dir,
+.icon-down-dir {
+    color: #c1c1c1;
+}
+
+.icon-up-dir:hover,
+.icon-down-dir:hover {
+    color: #b5b5b5;
+}
+
+.icon-up-dir:active,
+.icon-down-dir:active {
+    color: #000;
+}
+
+.icon-down-dir:before {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 10px;
+    margin: 0;
+}
+
+.icon-down-dir{
+    margin-right: 5px;
+}
+
+.icon-up-dir:before {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 10px;
+    margin: 0;
+}
+
+.checked-btn:before {
+    color: #00ca74;
+}
+
+
+
+/*
 .icon-up {
     position: absolute;
     right: 0;
     text-decoration: none;
 }
+*/
 
+/*
 .icon-up:before {
     display: inline-block;
     margin: 0;
@@ -1213,13 +1282,18 @@ input[placeholder] {
     font-family: "symbols-nerds";
     line-height: 20px;
 }
+*/
 
+/*
 .icon-down {
+    display: inline-block;
     position: absolute;
     right: 20px;
     text-decoration: none;
 }
+*/
 
+/*
 .icon-down:before {
     display: inline-block;
     margin: 0;
@@ -1230,21 +1304,24 @@ input[placeholder] {
     font-family: "symbols-nerds";
     line-height: 20px;
 }
+*/
 
-.sorting-btns .checked-btn:before {
-    color: #00ca74;
-}
 
+
+/*
 .icon-up:hover::before,
 .icon-down:hover::before {
     color: #b5b5b5;
 }
+*/
 
 
+/*
 .icon-up:active::before,
 .icon-down:active::before {
     color: #000;
 }
+*/
 
 
 .item {
