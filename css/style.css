@@ -1263,67 +1263,6 @@ input[placeholder] {
 
 
 
-/*
-.icon-up {
-    position: absolute;
-    right: 0;
-    text-decoration: none;
-}
-*/
-
-/*
-.icon-up:before {
-    display: inline-block;
-    margin: 0;
-    color: #c1c1c1;
-    content: "\25b2";
-    vertical-align: top;
-    font-size: 23px;
-    font-family: "symbols-nerds";
-    line-height: 20px;
-}
-*/
-
-/*
-.icon-down {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    text-decoration: none;
-}
-*/
-
-/*
-.icon-down:before {
-    display: inline-block;
-    margin: 0;
-    color: #c1c1c1;    
-    content: "\25bc";
-    vertical-align: top;
-    font-size: 23px;
-    font-family: "symbols-nerds";
-    line-height: 20px;
-}
-*/
-
-
-
-/*
-.icon-up:hover::before,
-.icon-down:hover::before {
-    color: #b5b5b5;
-}
-*/
-
-
-/*
-.icon-up:active::before,
-.icon-down:active::before {
-    color: #000;
-}
-*/
-
-
 .item {
     position:relative;
     display:inline-block;
@@ -1376,7 +1315,7 @@ input[placeholder] {
     position:absolute;
 /*    display:none;*/
     top: 20px;
-    left: 20px;
+    left: 22px;
     padding: 30px;
     width: 140px;
     height: 140px;
@@ -1396,7 +1335,8 @@ input[placeholder] {
 .item-title {
     display: inline-block;
     margin: 0;
-    margin-bottom: 18px;
+    margin-top: 5px;
+    margin-bottom: 13px;
     padding: 0;
     width: 140px;
     text-align: center;
@@ -1416,10 +1356,10 @@ input[placeholder] {
 
 .button-action {
     position:absolute;
-    bottom:28px;
-    left:30px;
+    bottom:30px;
+    left:28px;
     display: block;
-    padding: 10px;
+    padding: 7px 10px;
     width: 120px;
     border-radius: 3px;
     color: #fff;
