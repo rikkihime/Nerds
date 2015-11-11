@@ -728,12 +728,32 @@ h3 {
     width: 490px;
     background: #fff;
     box-shadow: 0px 0px 30px #a7a7a7;
-    transform: translate(-50%,-5000px);
-    transition: transform 2s ease-in;
+    transform: translate(-500%,250%);
+    transition: transform 1s ease-in;
 }
 
 .popup.opened {
     transform: translate(-50%,-50%);
+}
+
+.popup-error {
+    animation: shake 0.5s;
+}
+
+
+@keyframes shake {
+    0%, 100% { 
+        transform: translateX(-50%); 
+        transform: translateY(-50%);
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-55%); 
+        transform: translateY(-50%);
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(-45%); 
+        transform: translateY(-50%);
+    }
 }
 
 .popup-form label {
@@ -840,6 +860,7 @@ h3 {
     top: 5px;
     text-indent: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .popup-close::before,
