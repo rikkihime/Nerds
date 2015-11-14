@@ -63,7 +63,7 @@ src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
 
 
 
-
+/*     =====     ОБЩЕЕ     =====     */
 
 body{
 	background-color: #fff;
@@ -98,7 +98,7 @@ h3 {
 
 
 
-/*=====     ХЕДЕР И НАВИГАЦИЯ    =====*/
+/*     =====     HEADER / LOGO / NAVIGATION / CART     =====     */
 
 .main-header {
     padding-top: 5px;
@@ -161,8 +161,6 @@ h3 {
     content: "";
 }
 
-
-
 .main-navigation a:hover {
     color: #f87f81;
 }
@@ -211,20 +209,28 @@ h3 {
 
 
 
-
-/*=====     СЛАЙДЕР     =====*/
+/*     =====     SLIDER     =====     */
 
 .slider {
     position: relative;
     overflow: hidden;
+    width: 880px;
+    min-height: 310px;
+    margin: 0 auto;
 }
 
 .slide {
-    float: left;
-    margin-right: 20px;
     padding-top: 43px;
+    padding-left: 18px;
     min-height: 310px;
     width: 880px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 
@@ -279,7 +285,7 @@ h3 {
 .slider-button {
     display: block;
     margin-top: 23px;
-    padding: 12px 10px;
+    padding: 11px 10px;
     width: 220px;
     border-radius: 3px;
     background: #fb565a;
@@ -294,12 +300,13 @@ h3 {
 
 .switcher {
     position: absolute;
-    bottom: 85px;
+    top: 247px;
     left: 50%;
-    margin-left: -37px;
+    margin-left: -38px;
+    z-index: 100;
 }
 
-.switcher input {
+.slider input {
     display: none;
 }
 
@@ -315,21 +322,33 @@ h3 {
     cursor: pointer;
 }
 
-.switcher input:checked + label {
+#button-1:checked ~ .switcher .bt-1,
+#button-2:checked ~ .switcher .bt-2, 
+#button-3:checked ~ .switcher .bt-3 {
     background-color: #c1c1c1;
 }
 
-.slides {
-    width: 2700px;
+#button-1:checked ~ .slides .slide-1 {
+    opacity: 1;
+    transition: 0.7s; 
+}
+
+#button-2:checked ~ .slides .slide-2 {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+#button-3:checked ~ .slides .slide-3 {
+    opacity: 1;
+    transition: 0.7s;
 }
 
 
 
-
-/*=====     ОРДЕРС     =====*/
+/*     =====     ORDERS     =====     */
 
 .orders {
-    margin-top: 80px;
+    margin-top: 122px;
     border-bottom: 2px solid #eeeeee; 
 }
 
@@ -441,7 +460,7 @@ h3 {
 
 
 
-/*=====     ПРОМО БЛОК      =====*/
+/*     =====     PROMO     =====     */
 
 .promo-block {
     margin-top: 60px;
@@ -479,7 +498,6 @@ h3 {
     width: 240px;
 }
 
-
 .list-promo {
     margin-top: 27px;
     margin-bottom: 65px;
@@ -509,13 +527,12 @@ h3 {
 
 
 
-/*=====     ПАРТНЕРЫ      ===================================*/
+/*     =====     PARTNERS     =====     */
 
 .partners-block {
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
 }
-
 
 .partners-block a {
     display: inline-block;
@@ -559,8 +576,7 @@ h3 {
 
 
 
-
-/*=====     КАРТА     =====*/
+/*     =====     MAP / CONTACTS    =====     */
 
 .map {
     position: relative;
@@ -603,7 +619,6 @@ h3 {
     text-decoration: none;
     text-transform:uppercase;
     font-size:12px;
-/*    margin-bottom: px;*/
 }
 
 .our-contacts h4 {
@@ -618,13 +633,14 @@ h3 {
 
 
 
-/*=====     ФУТЕР     ====================================*/
+/*     =====     FOOTER     =====     */
 
 .footer-align a {
     position: relative;
     float: left;
     margin-right: 24px;
     margin-left: 0;
+    margin-top: 5px;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -669,7 +685,6 @@ h3 {
     line-height: 23px;
 }
 
-
 .footer-text-block {
     float: right;
     margin-right: 12px;
@@ -691,12 +706,9 @@ h3 {
 
 
 
-
-/*========================     POPUP     =====*/
-
+/*     =====     POPUP     =====     */
 
 .popup {
-/*    display:none;*/
     position: fixed;    
     top: 50%;
     left: 50%;
@@ -718,19 +730,15 @@ h3 {
     animation: shake 0.5s;
 }
 
-
 @keyframes shake {
     0%, 100% { 
-        transform: translateX(-50%); 
-/*        transform: translateY(0%);*/
+        transform: translate(-50%,-50%); 
     }
     10%, 30%, 50%, 70%, 90% { 
-        transform: translateX(-55%); 
-/*        transform: translateY(0%);*/
+        transform: translate(-53%,-50%); 
     }
     20%, 40%, 60%, 80% { 
-        transform: translateX(-45%); 
-/*        transform: translateY(0%);*/
+        transform: translate(-47%,-50%); 
     }
 }
 
@@ -753,7 +761,6 @@ h3 {
     float: left;
     padding: 5px 0;
 }
-
 
 .popup-form input[type="text"],
 .popup-form input[type="email"],
@@ -883,7 +890,6 @@ textarea[placeholder] {
     color:#000;
 }
 
-
 .popup-form input[type="text"]:hover,
 .popup-form input[type="email"]:hover,
 .popup-form textarea:hover {
@@ -898,8 +904,7 @@ textarea[placeholder] {
 
 
 
-
-/*=====     КАТАЛОГ     =====*/
+/*     =====     CATALOG     =====     */
 
 .catalog-title {
     padding: 60px 50px 0px 40px ;
@@ -912,9 +917,7 @@ textarea[placeholder] {
 
 
 
-
-
-/*=====     ФИЛЬТР КАТАЛОГА     ===========================*/
+/*     =====     CATALOG / FILTERS     =====     */
 
 .filters {
     float: left;
@@ -928,6 +931,85 @@ textarea[placeholder] {
     font-size: 18px;     
     line-height: 30px;
 }
+
+.range-filter{
+    margin: 0px auto;
+}
+
+.range-controls{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding-top: 39px;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 41px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.range-controls .scale{
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.bar{
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.range-controls .toggle{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .min-toggle{
+    left: 20px;
+}
+
+.range-controls .max-toggle{
+    left: 160px;
+}
+
+.price-controls{
+    margin-bottom: 33px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.price-controls input{
+    margin-left: 7px;
+    padding: 8px 10px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #283136;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 22px;
+}
+
+.price-controls label.min-price {
+    float: left;
+}
+
+.price-controls label.max-price {
+    float: right;
+}
+
 
 .radio-filters,
 .check-filters {
@@ -985,7 +1067,6 @@ textarea[placeholder] {
     content: "\2611";
 }
 
-
 .radio-filters input[type="radio"] {
     display: none;
 }
@@ -1028,82 +1109,6 @@ textarea[placeholder] {
     color: #bdbfc0;
 }
 
-
-.range-filter{
-    margin: 0px auto;
-    width: 240px;
-}
-
-.range-controls{
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 15px;
-    padding-top: 39px;
-    padding-right: 30px;
-    padding-left: 30px;
-    height: 41px;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-}
-
-.range-controls .scale{
-    height: 2px;
-    background-color: #d7dcde;
-}
-
-.bar{
-    position: absolute;
-    width: 140px;
-    height: 2px;
-    background-color: #00ca74;
-}
-
-.range-controls .toggle{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 4px;
-    height: 4px;
-    border: 8px solid #fff;
-    border-radius: 50%;
-    background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
-    cursor: pointer;
-}
-
-.range-controls .min-toggle{
-    left: 20px;
-}
-
-.range-controls .max-toggle{
-    left: 160px;
-}
-
-.price-controls{
-    margin-bottom: 44px;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-.price-controls input{
-    margin-left: 7px;
-    padding: 8px 10px;
-    width: 60px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-    color: #283136;
-    text-align: center;
-    font-weight: normal;
-    font-size: 16px;
-    font-family: "Roboto", Arial, sans-serif;
-    line-height: 22px;
-}
-
-.price-controls .min-price{
-    margin-right: 6px;
-}
-
 .filters-button {
     margin-top: 48px;
     width: 155px;
@@ -1115,12 +1120,6 @@ textarea[placeholder] {
     font-size: 12px;
     line-height: 18px;
 }
-
-
-
-
-
-/*======================================== GREY BTN =======*/
 
 .grey-btn {
     outline: none;
@@ -1135,6 +1134,9 @@ textarea[placeholder] {
     background-color: #d5d5d5;
 }
 
+
+/*     =====     ОБЩИЕ СТИЛИ КНОПОК     =====     */
+
 .grey-btn:active, 
 .btn-red:active,
 .btn-green:active,
@@ -1144,15 +1146,15 @@ textarea[placeholder] {
 
 
 
-
-
-/*=====     КОНТЕНТ     =====*/
+/*     =====     CONTENT     =====     */
 
 .content {
     float: right;
     min-height: 1070px;
     width: 564px;
 }
+
+/*     =====     CONTENT / SORTING     =====     */
 
 .sorting {
     position: relative;
@@ -1257,6 +1259,8 @@ textarea[placeholder] {
 
 
 
+/*     =====     CATALOG / ITEMS     =====     */
+
 .item {
     position:relative;
     display:inline-block;
@@ -1307,7 +1311,7 @@ textarea[placeholder] {
 .item-info {
     position:absolute;
     top: 20px;
-    left: 22px;
+    left: 20px;
     padding: 30px;
     width: 140px;
     height: 140px;
@@ -1321,15 +1325,10 @@ textarea[placeholder] {
     transition: 0.5s;
 }
 
-
-
 .item-title {
     display: inline-block;
-    margin: 0;
     margin-top: 5px;
-    margin-bottom: 13px;
-    padding: 0;
-    width: 140px;
+    margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
@@ -1361,6 +1360,7 @@ textarea[placeholder] {
 
 
 
+/*     =====     PAGINATION     =====     */
 
 .page-button {
     font-size: 12px;
@@ -1401,8 +1401,5 @@ textarea[placeholder] {
     border-top: 3px solid #b5b5b5;
     background-color: #d5d5d5;
 }
-
-
-
 
 
