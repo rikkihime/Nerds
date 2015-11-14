@@ -26,6 +26,7 @@ src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
     /* remove if not needed */
     margin-left: 0.2em;
     width: 1em;
+    vertical-align: middle;
     text-align: center;
     text-decoration: inherit;
     text-transform: none;
@@ -82,7 +83,8 @@ body{
 
 h2 {
     font-size: 36px;
-    line-height: 1;   
+    line-height: 1;  
+    font-weight: 500;
 }
 
 h3 {
@@ -214,19 +216,19 @@ h3 {
 .slider {
     position: relative;
     overflow: hidden;
-    width: 880px;
-    min-height: 310px;
     margin-top: 40px;
+    min-height: 310px;
+    width: 880px;
 }
 
 .slide {
-    padding-left: 18px;
-    min-height: 310px;
-    width: 880px;
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
+    padding-left: 18px;
+    min-height: 310px;
+    width: 880px;
     opacity: 0;
     transition: 0.5s;
 }
@@ -300,8 +302,8 @@ h3 {
     position: absolute;
     top: 207px;
     left: 50%;
-    margin-left: -38px;
     z-index: 100;
+    margin-left: -38px;
 }
 
 .slider input {
@@ -329,8 +331,8 @@ h3 {
 #button-1:checked ~ .slides .slide-1,
 #button-2:checked ~ .slides .slide-2,
 #button-3:checked ~ .slides .slide-3 {
-    opacity: 1; 
     z-index: 50;   
+    opacity: 1; 
 }
 
 
@@ -552,16 +554,19 @@ h3 {
 .partners-block .partner-1 {
     display: inline-block;
     background: url(../img/partners-block-glukhanko.png) no-repeat center;
+    vertical-align: middle;
 }
 
 .partners-block .partner-2 {
     display: inline-block;
     background: url(../img/partners-block-academy.png) no-repeat center;
+    vertical-align: middle;
 }
 
 .partners-block .partner-3 {
     display: inline-block;
     background: url(../img/partners-block-borodinski.png) no-repeat center;
+    vertical-align: middle;
 }
 
 
@@ -628,9 +633,9 @@ h3 {
 .footer-align a {
     position: relative;
     float: left;
+    margin-top: 5px;
     margin-right: 24px;
     margin-left: 0;
-    margin-top: 5px;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -677,8 +682,8 @@ h3 {
 
 .footer-text-block {
     float: right;
-    margin-right: 12px;
     margin-top: 4px;
+    margin-right: 12px;
     min-height: 80px;
     width: 550px;
 }
@@ -686,6 +691,7 @@ h3 {
 .footer-text-block h2 {
     margin-top: 0;
     margin-bottom: 0;
+    white-space: nowrap;
     font-size: 36px;
 }
 .footer-text-block p {
@@ -785,8 +791,8 @@ h3 {
 
 .popup-form input[type="submit"] {
     padding: 10px 0;
-    outline: none;
     width: 220px;
+    outline: none;
     border: none;
     border-radius: 3px;
     background: #fb565a;
@@ -902,6 +908,7 @@ textarea[placeholder] {
     width: 660px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 500;
     font-size: 40px;
 }
 
@@ -1261,6 +1268,7 @@ textarea[placeholder] {
     border-top-left-radius:5px;
     border-top-right-radius:5px;
     background:#f1f1f1;
+    vertical-align: top;
 }
 
 .item:hover{
@@ -1302,9 +1310,9 @@ textarea[placeholder] {
     position:absolute;
     top: 20px;
     left: 20px;
-    padding: 30px;
-    width: 140px;
-    height: 140px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
     background: #fff;
     text-align: center;
     opacity: 0;
@@ -1317,18 +1325,24 @@ textarea[placeholder] {
 
 .item-title {
     display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 34px;
+    margin-bottom: 12px;
+    width: 160px;
+    vertical-align: top;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size:18px;
-    line-height:20px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .item-info p {
+    overflow: hidden;
     margin: 0;
+    margin: 0 auto;
     max-height:52px;
+    width: 160px;
+    text-align: center;
     font-size:14px;
     line-height:18px;
 }
@@ -1336,7 +1350,7 @@ textarea[placeholder] {
 .button-action {
     position:absolute;
     bottom:30px;
-    left:28px;
+    left:30px;
     display: block;
     padding: 7px 10px;
     width: 120px;
