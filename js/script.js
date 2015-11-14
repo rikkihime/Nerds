@@ -28,7 +28,7 @@ write_us.addEventListener("click", function(event) {
         login.value = login_storage;
         email.focus();
     } else {
-        login.focus;
+        login.focus();
     }  
 });
 
